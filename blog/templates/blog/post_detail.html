@@ -8,11 +8,8 @@
     <title>Post List</title>
 </head>
 <body>
-{% for post in posts %}
-<p>Title: <a href="{{post.get_absolute_url}}">{{post.title}}</a></p>
-{{post.slug}}
-    <small>Created: {{post.created}}</small>
-    <p>Body: {{post.body|truncatewords:30}}</p>
-{% endfor %}
+    <h2>Title: {{post.title}}</h2>
+    <small>Created: {{post.created}} | Updated: {{post.updated}}</small>
+    <p>Body: {{post.body}}</p>
 </body>
 </html>

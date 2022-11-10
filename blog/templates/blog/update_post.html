@@ -8,11 +8,12 @@
     <title>Post List</title>
 </head>
 <body>
-{% for post in posts %}
-<p>Title: <a href="{{post.get_absolute_url}}">{{post.title}}</a></p>
-{{post.slug}}
-    <small>Created: {{post.created}}</small>
-    <p>Body: {{post.body|truncatewords:30}}</p>
-{% endfor %}
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+<input type="submit" value="Update Post">
+</form>
 </body>
 </html>
+
+
