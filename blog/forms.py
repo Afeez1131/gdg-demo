@@ -7,3 +7,5 @@ class BlogPostForm(forms.ModelForm):
         model = BlogPost
         fields = ['title', 'body']
 
+
+
