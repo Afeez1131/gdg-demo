@@ -1,6 +1,6 @@
 In order to run this on your computer, Kindly follow the steps below.
 
-- `git clone `
+- `git clone https://github.com/Afeez1131/gdg-demo`
 - `pip install -r requirements.txt`
 - `touch .env` (to create a new environmental variable in the root directory)
 - Generate a new secret key, and paste in the environmental variable in the format ```SECRET_KEY=SECRET_KEY```
